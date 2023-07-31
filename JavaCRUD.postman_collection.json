@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "a3589bb6-7366-4314-a3f9-b4cf59e59791",
+		"name": "JavaCRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23881581"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\" : \"Doe\",\n    \"age\":\"30\",\n    \"occupation\":\"Developer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
